@@ -1,0 +1,15 @@
+# Root-level working files (briefs, CV, drafts, notes, checklist) stay local.
+# Only README.md at the root is published.
+/*.md
+!/README.md
+/*.pdf
+
+# Node / build / local env
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
