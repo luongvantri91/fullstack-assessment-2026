@@ -2,6 +2,13 @@
 
 > Ký ức đầu tiên của bạn là gì?
 
+**Chúng tôi muốn nghe gì**
+
+Một cảnh tượng, lý tưởng nhất là có chi tiết giác quan. Ký ức đầu đời thường không đầy đủ — chúng tôi không kiểm tra độ chính xác. Chúng tôi muốn thấy cách bạn truy cập ký ức và liệu bạn có phân biệt "điều tôi nhớ" với "điều người ta kể tôi" hay không.
+
+**Tín hiệu tốt:** Một mảnh ký ức, được kể thành thật, kèm sự tự ý thức về phần nào là dựng lại.
+**Tín hiệu yếu:** Một câu chuyện đã được đánh bóng không tì vết. Hoặc từ chối tham gia hoàn toàn.
+
 ---
 
 ## Đêm mưa trong căn nhà dột

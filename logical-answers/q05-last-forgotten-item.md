@@ -2,6 +2,13 @@
 
 > Lần cuối cùng bạn bỏ quên một món đồ là khi nào và món đồ là gì?
 
+**Chúng tôi muốn nghe gì**
+
+Món đồ, thời gian, địa điểm, và lý tưởng là *thời khắc* bạn nhận ra mình đã bỏ quên. Điểm thưởng: hệ thống bạn xây để không quên đồ. Kiểm tra cả trí nhớ và sự tự quan sát.
+
+**Tín hiệu tốt:** Một câu chuyện cụ thể, kể kèm khoảnh khắc nhận ra. Trung thực về cái giá phải trả.
+**Tín hiệu yếu:** "Tôi không bao giờ quên đồ." (Khó tin — thường nghĩa là tự giám sát thấp.)
+
 ---
 
 ## Đi làm quên điện thoại cá nhân ở nhà

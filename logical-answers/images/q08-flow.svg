@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="990" viewBox="0 0 1200 990" role="img" aria-label="Sơ đồ luồng đổ xăng: chọn cách thanh toán, đổ xăng, hóa đơn">
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+    .lab { font-size: 16px; font-weight: bold; fill: #37474F; }
+    .t { font-size: 13px; }
+    .b { font-size: 13px; font-weight: bold; }
+    .s { font-size: 12px; font-weight: bold; fill: #607D8B; }
+    .sm { font-size: 12px; fill: #37474F; }
+    .warn { font-size: 13px; font-weight: bold; fill: #C62828; }
+    .box1 { fill: #FFFFFF; stroke: #1565C0; stroke-width: 2; }
+    .box2 { fill: #FFFFFF; stroke: #EF6C00; stroke-width: 2; }
+    .box3 { fill: #FFFFFF; stroke: #2E7D32; stroke-width: 2; }
+    .line { stroke: #37474F; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#37474F"/>
+    </marker>
+  </defs>
+
+  <!-- Dải giai đoạn -->
+  <rect x="20" y="20" width="1160" height="290" rx="14" fill="#E3F2FD"/>
+  <rect x="20" y="330" width="1160" height="300" rx="14" fill="#FFF3E0"/>
+  <rect x="20" y="650" width="1160" height="320" rx="14" fill="#E8F5E9"/>
+  <text x="40" y="48" class="lab">1. CHỌN CÁCH THANH TOÁN (làm trước khi đến cột)</text>
+  <text x="40" y="358" class="lab">2. ĐỔ XĂNG</text>
+  <text x="260" y="688" class="lab">3. HÓA ĐƠN (chỉ khi cần)</text>
+
+  <!-- ===== GIAI ĐOẠN 1 ===== -->
+  <!-- 1.1 -->
+  <rect x="60" y="80" width="200" height="120" rx="10" class="box1"/>
+  <text x="70" y="98" class="s">1.1</text>
+  <g transform="translate(160,128) scale(0.8)">
+    <path d="M0,-20 C10,-6 15,2 15,9 A15,15 0 0 1 -15,9 C-15,2 -10,-6 0,-20 Z" fill="#1E88E5" stroke="#0D47A1" stroke-width="2"/>
+  </g>
+  <text x="160" y="170" text-anchor="middle" class="t">Chọn loại xăng</text>
+  <text x="160" y="188" text-anchor="middle" class="t">và số tiền muốn đổ</text>
+
+  <path d="M260,140 L285,140" class="line"/>
+
+  <!-- Cách trả? -->
+  <polygon points="365,85 445,140 365,195 285,140" fill="#FFFFFF" stroke="#1565C0" stroke-width="2"/>
+  <text x="365" y="145" text-anchor="middle" class="b">Cách trả?</text>
+
+  <path d="M445,140 L465,140 L465,115 L490,115" class="line"/>
+  <path d="M465,140 L465,242 L490,242" class="line"/>
+  <text x="462" y="107" text-anchor="end" class="sm">Tiền mặt</text>
+  <text x="462" y="262" text-anchor="end" class="sm">QR / thẻ</text>
+
+  <!-- 1.2 tiền mặt -->
+  <rect x="490" y="60" width="200" height="110" rx="10" class="box1"/>
+  <text x="500" y="78" class="s">1.2</text>
+  <g transform="translate(590,98)">
+    <rect x="-26" y="-14" width="52" height="28" rx="3" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+    <circle r="7" fill="none" stroke="#2E7D32" stroke-width="2"/>
+  </g>
+  <text x="590" y="140" text-anchor="middle" class="b">Tiền mặt:</text>
+  <text x="590" y="158" text-anchor="middle" class="t">chuẩn bị đúng số tiền</text>
+
+  <!-- 1.2 QR / thẻ -->
+  <rect x="490" y="185" width="200" height="115" rx="10" class="box1"/>
+  <text x="500" y="203" class="s">1.2</text>
+  <g transform="translate(590,225) scale(0.8)">
+    <rect x="-34" y="-22" width="26" height="44" rx="4" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <rect x="-30" y="-14" width="8" height="8" fill="#333"/>
+    <rect x="-18" y="-14" width="8" height="8" fill="#333"/>
+    <rect x="-30" y="-2" width="8" height="8" fill="#333"/>
+    <rect x="-18" y="-2" width="8" height="8" fill="#999"/>
+    <rect x="2" y="-12" width="40" height="26" rx="3" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+    <rect x="2" y="-5" width="40" height="6" fill="#1565C0"/>
+  </g>
+  <text x="590" y="260" text-anchor="middle" class="b">QR / thẻ: trả tại trụ POS,</text>
+  <text x="590" y="277" text-anchor="middle" class="t">nhận phiếu trước khi</text>
+  <text x="590" y="292" text-anchor="middle" class="t">vào hàng đổ xăng</text>
+
+  <!-- gộp lại -> 1.3 -->
+  <path d="M690,115 L730,115 L730,157 L770,157" class="line"/>
+  <path d="M690,242 L730,242 L730,157" fill="none" stroke="#37474F" stroke-width="2"/>
+
+  <!-- 1.3 hóa đơn -->
+  <rect x="770" y="100" width="230" height="115" rx="10" class="box1"/>
+  <text x="780" y="118" class="s">1.3</text>
+  <g transform="translate(885,138) scale(0.8)">
+    <path d="M-15,-22 H5 L15,-12 V22 H-15 Z" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <path d="M5,-22 V-12 H15" fill="none" stroke="#333" stroke-width="2"/>
+    <line x1="-9" y1="-2" x2="9" y2="-2" stroke="#333" stroke-width="2"/>
+    <line x1="-9" y1="6" x2="9" y2="6" stroke="#333" stroke-width="2"/>
+    <line x1="-9" y1="14" x2="3" y2="14" stroke="#333" stroke-width="2"/>
+  </g>
+  <text x="885" y="178" text-anchor="middle" class="b">Cần hóa đơn?</text>
+  <text x="885" y="195" text-anchor="middle" class="t">Chuẩn bị sẵn thông tin</text>
+  <text x="885" y="210" text-anchor="middle" class="t">để xuất hóa đơn</text>
+
+  <!-- sang giai đoạn 2 -->
+  <path d="M885,215 L885,322 L160,322 L160,395" class="line"/>
+
+  <!-- ===== GIAI ĐOẠN 2 ===== -->
+  <!-- 2.1 -->
+  <rect x="65" y="395" width="190" height="190" rx="10" class="box2"/>
+  <text x="75" y="413" class="s">2.1</text>
+  <g transform="translate(168,445)">
+    <rect x="-50" y="-20" width="16" height="36" rx="2" fill="#FFCC80" stroke="#E65100" stroke-width="2"/>
+    <path d="M-34,-8 Q-26,-8 -26,2" fill="none" stroke="#E65100" stroke-width="2"/>
+    <circle cx="-10" cy="14" r="9" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <circle cx="26" cy="14" r="9" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <path d="M-10,14 L2,-4 L18,-4 L26,14" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M18,-4 L24,-16 L30,-16" fill="none" stroke="#333" stroke-width="2"/>
+    <path d="M-4,-8 H8" stroke="#333" stroke-width="4"/>
+  </g>
+  <text x="160" y="498" text-anchor="middle" class="b">Xếp hàng ở cột</text>
+  <text x="160" y="516" text-anchor="middle" class="t">ít xe nhất. Dừng gần</text>
+  <text x="160" y="534" text-anchor="middle" class="t">vòi, phía có nắp bình</text>
+
+  <path d="M255,490 L285,490" class="line"/>
+
+  <!-- 2.2 -->
+  <rect x="285" y="395" width="190" height="190" rx="10" class="box2"/>
+  <text x="295" y="413" class="s">2.2</text>
+  <g transform="translate(380,445)">
+    <path d="M-11,-9 A14,14 0 1 0 11,-9" fill="none" stroke="#C62828" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="-20" x2="0" y2="0" stroke="#C62828" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="380" y="498" text-anchor="middle" class="b">Tắt máy</text>
+  <text x="380" y="516" text-anchor="middle" class="t">Mở sẵn nắp bình</text>
+  <text x="380" y="534" text-anchor="middle" class="t">hoặc yên xe</text>
+
+  <path d="M475,490 L505,490" class="line"/>
+
+  <!-- 2.3 -->
+  <rect x="505" y="395" width="190" height="190" rx="10" class="box2"/>
+  <text x="515" y="413" class="s">2.3</text>
+  <g transform="translate(600,445)">
+    <rect x="-28" y="-18" width="56" height="34" rx="8" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <path d="M-12,16 L-18,26 L-4,16" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <circle cx="-12" cy="-1" r="3" fill="#333"/>
+    <circle cx="0" cy="-1" r="3" fill="#333"/>
+    <circle cx="12" cy="-1" r="3" fill="#333"/>
+  </g>
+  <text x="600" y="498" text-anchor="middle" class="b">Nói với nhân viên:</text>
+  <text x="600" y="516" text-anchor="middle" class="t">[loại xăng], [số tiền]</text>
+  <text x="600" y="534" text-anchor="middle" class="t">Có phiếu: đưa phiếu luôn</text>
+
+  <path d="M695,490 L725,490" class="line"/>
+
+  <!-- 2.4 -->
+  <rect x="725" y="395" width="190" height="190" rx="10" class="box2"/>
+  <text x="735" y="413" class="s">2.4</text>
+  <g transform="translate(820,448) scale(0.9)">
+    <rect x="-11" y="-19" width="22" height="38" rx="4" fill="#FFFFFF" stroke="#333" stroke-width="2"/>
+    <circle r="26" fill="none" stroke="#D32F2F" stroke-width="4"/>
+    <line x1="-18" y1="-18" x2="18" y2="18" stroke="#D32F2F" stroke-width="4"/>
+  </g>
+  <text x="820" y="498" text-anchor="middle" class="t">Nhân viên đang đổ:</text>
+  <text x="820" y="516" text-anchor="middle" class="warn">KHÔNG dùng</text>
+  <text x="820" y="534" text-anchor="middle" class="warn">điện thoại</text>
+
+  <path d="M915,490 L945,490" class="line"/>
+
+  <!-- 2.5 -->
+  <rect x="945" y="395" width="190" height="190" rx="10" class="box2"/>
+  <text x="955" y="413" class="s">2.5</text>
+  <g transform="translate(1040,445)">
+    <g transform="translate(-14,0) scale(0.8)">
+      <rect x="-26" y="-14" width="52" height="28" rx="3" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+      <circle r="7" fill="none" stroke="#2E7D32" stroke-width="2"/>
+    </g>
+    <path d="M10,4 L18,12 L32,-6" fill="none" stroke="#2E7D32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="1040" y="498" text-anchor="middle" class="b">Nhân viên báo xong:</text>
+  <text x="1040" y="516" text-anchor="middle" class="t">trả tiền mặt (nếu chưa</text>
+  <text x="1040" y="534" text-anchor="middle" class="t">trả), đóng nắp bình,</text>
+  <text x="1040" y="552" text-anchor="middle" class="t">khởi động, rời cột</text>
+
+  <!-- sang giai đoạn 3 -->
+  <path d="M1040,585 L1040,640 L200,640 L200,740" class="line"/>
+
+  <!-- ===== GIAI ĐOẠN 3 ===== -->
+  <!-- 3.1 -->
+  <polygon points="200,740 300,800 200,860 100,800" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+  <text x="200" y="797" text-anchor="middle" class="s">3.1</text>
+  <text x="200" y="814" text-anchor="middle" class="b">Cần hóa đơn?</text>
+
+  <path d="M300,800 L350,800" class="line"/>
+  <text x="325" y="790" text-anchor="middle" class="sm">Có</text>
+
+  <!-- 3.2 -->
+  <rect x="350" y="740" width="270" height="120" rx="10" class="box3"/>
+  <text x="360" y="758" class="s">3.2</text>
+  <g transform="translate(485,775)">
+    <circle cx="0" cy="-14" r="8" fill="#FFE0B2" stroke="#333" stroke-width="2"/>
+    <path d="M-14,12 Q-14,-4 0,-4 Q14,-4 14,12 Z" fill="#90CAF9" stroke="#333" stroke-width="2"/>
+    <rect x="-30" y="12" width="60" height="8" fill="#A1887F"/>
+  </g>
+  <text x="485" y="815" text-anchor="middle" class="b">Đến bàn hóa đơn:</text>
+  <text x="485" y="833" text-anchor="middle" class="t">đưa thông tin đã chuẩn bị,</text>
+  <text x="485" y="850" text-anchor="middle" class="t">nhận hóa đơn</text>
+
+  <path d="M620,800 L720,800" class="line"/>
+
+  <!-- Kết thúc -->
+  <rect x="720" y="765" width="200" height="70" rx="35" fill="#FFFFFF" stroke="#2E7D32" stroke-width="3"/>
+  <g transform="translate(762,800)">
+    <path d="M-12,0 L8,0 M2,-7 L10,0 L2,7" fill="none" stroke="#2E7D32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="840" y="805" text-anchor="middle" class="b">Ra khỏi trạm</text>
+
+  <!-- 3.1 Không -->
+  <path d="M200,860 L200,925 L820,925 L820,835" class="line"/>
+  <text x="215" y="890" class="sm">Không</text>
+</svg>
