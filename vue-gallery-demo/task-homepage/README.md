@@ -35,12 +35,13 @@ Tip: use the browser's device toolbar (mobile width) for the intended look.
 ## Project structure
 
 ```
-homepage-vue/
-├─ index.html            Entry point, loads Vue, api.js, app.js
-├─ api.js                Data layer: fetchItems(), cache, fallback, placeholder images
-├─ app.js                Composables, components, root App
-├─ styles.css            Styles
-├─ api-architecture.md   API architecture, diagrams, comparison with the reference page
+task-homepage/
+├─ index.html               Entry point, loads Vue, api.js, app.js
+├─ api.js                   Data layer: fetchItems(), cache, fallback, placeholder images
+├─ app.js                   Composables, components, root App
+├─ styles.css               Styles
+├─ api-architecture.en.md   API architecture, diagrams, comparison with the reference page (English)
+├─ api-architecture.md      Same document in Vietnamese
 └─ README.md
 ```
 
