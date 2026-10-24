@@ -1,12 +1,6 @@
-Quiz:
-
-1. Analyse this website API
+# Analyse this website API
 
 https://43.213.218.98:8000/?800tk#/pages/index/index
-
-# Answer
-
-## Task 1. Website API Analysis
 
 ### 1. Summary
 
